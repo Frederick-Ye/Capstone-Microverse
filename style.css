@@ -11,11 +11,37 @@
   padding: 3rem 1rem;
 }
 
-header {
+.header-main {
   color: #cecece;
   background: url(./images/background.jpg);
   background-size: cover;
   background-position: right;
+}
+
+.header-about {
+  color: #fff;
+  background-color: royalblue;
+}
+
+.header-about h1 {
+  text-align: center;
+}
+
+.header-about .hero p {
+  text-align: center;
+}
+
+.hero-text {
+  color: black;
+  border: 3px solid black;
+  background-color: #fff;
+  padding-top: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.contact-info {
+  margin-top: 3rem;
 }
 
 .hero h1 {
@@ -59,7 +85,7 @@ header {
 
 .underline {
   opacity: 1;
-  max-width: 100px;
+  max-width: 35px;
   margin-left: auto;
   margin-right: auto;
   color: red;
@@ -242,4 +268,28 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+/* about page mobile */
+
+.section-2 h5,
+.section-3 h5,
+.section-4 h5 {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-weight: 900;
+}
+
+.section-2 p,
+.section-3 p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.section-2 {
+  border-bottom: 1px solid #cecece;
+}
+
+.logo-large {
+  border: 1px solid #cecece;
 }
