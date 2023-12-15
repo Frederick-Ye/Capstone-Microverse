@@ -118,6 +118,27 @@ header {
   background-color: #cecece;
 }
 
+.moreBtn button {
+  border: 1px solid black;
+  width: 90%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.lessBtn button {
+  border: 1px solid black;
+  width: 90%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .programBtn button:active {
   background-color: rgb(255, 129, 18);
   color: #fff;
@@ -221,25 +242,4 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-}
-
-.moreBtn button {
-  border: 1px solid black;
-  width: 90%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #fff;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.lessBtn button {
-  border: 1px solid black;
-  width: 90%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #fff;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
 }

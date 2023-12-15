@@ -1,9 +1,9 @@
-document.querySelector('.navbar-toggler').addEventListener('click', function () {
+document.querySelector('.navbar-toggler').addEventListener('click', () => {
   document.querySelector('.navbar-toggler').classList.add('d-none');
-  document.getElementById('closeBtn').classList.remove('d-none')
+  document.getElementById('closeBtn').classList.remove('d-none');
 });
 
-document.getElementById('closeBtn').addEventListener('click', function () {
+document.getElementById('closeBtn').addEventListener('click', () => {
   document.querySelector('.navbar-toggler').classList.remove('d-none');
   document.getElementById('closeBtn').classList.add('d-none');
 });
@@ -11,14 +11,14 @@ document.getElementById('closeBtn').addEventListener('click', function () {
 const more = document.getElementById('moreBtn');
 const less = document.getElementById('lessBtn');
 
-more.addEventListener('click', function() {
+more.addEventListener('click', () => {
   document.querySelector('div.dynamic').classList.remove('d-none');
   more.classList.add('d-none');
   less.classList.remove('d-none');
-})
+});
 
-less.addEventListener('click', function() {
+less.addEventListener('click', () => {
   document.querySelector('div.dynamic').classList.add('d-none');
   more.classList.remove('d-none');
   less.classList.add('d-none');
-})
+});
