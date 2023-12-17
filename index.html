@@ -24,9 +24,14 @@
           <span class="navbar-toggler-icon"><i class='bx bx-x bx-sm'></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-logo">
+            <a href="index.html">
+              <img src="./images/logotop.png" alt="">
+            </a>
+          </div>
           <ul class="navbar-nav">
             <li class="nav-item ms-5">
-              <a class="nav-link" href="#">About</a>
+              <a id="aboutBtn" class="nav-link text-success" href="about.html">About</a>
             </li>
             <li class="nav-item ms-5">
               <a class="nav-link" href="#">Program</a>
@@ -41,17 +46,20 @@
               <a class="nav-link" href="#">News</a>
             </li>
           </ul>
+          <div class="campaign">CC Campaign</div>
         </div>
       </div>
     </nav>
     <section class="hero">
-      <p>"Hello! Sharing world"</p>
-      <h1>CREATIVE COMMON GLOBAL SUMMIT<br>2024<br></h1>
-      <p class="heroText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magnam consequatur explicabo,
+      <p class="hello-text">"Hello! Sharing world"</p>
+      <h1 class="home-h1">CREATIVE COMMONS <br>GLOBAL SUMMIT<br>2024<br></h1>
+      <p class="hero-text-home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur et ea?
+        Tenetur corrupti voluptatum aliquid error modi reprehenderit beatae nobis ipsa, porro eos dolorum. Labore
+        accusamus facere odio. Magni?
       </p>
 
       <h2>2024.1.1(SAT) ~ 2(SUN)</h2>
-      <p>@National Museum of Myanmar,Yangon</p>
+      <p class="place">@ National Museum of Myanmar, Yangon</p>
     </section>
   </header>
 
@@ -94,7 +102,7 @@
         <li class="program-list">
           <div class="program1"><a href=""><i class='bx bxs-castle bx-sm'></i></a></div>
           <div class="program2">
-            <h6>workshop</h6>
+            <h6>Workshop</h6>
           </div>
           <div class="program-text">
             <p>Try creating your own work using open source license rather than just watching.
@@ -122,68 +130,102 @@
     <hr class="underline">
     <div class="speaker-container">
       <div class="speaker">
-        <img src="./images/speaker1.jpg" class="speaker-img">
+        <div>
+          <img src="./images/speaker1.jpg" class="speaker-img">
+        </div> 
         <div class="speaker-right">
           <p class="name">John Doe</p>
           <p class="title">Software Engineer</p>
           <hr class="underline">
-          <p>Responsible for developing and maintaining software applications, collaborating with cross-functional teams, and ensuring code quality.</p>
+          <p>Responsible for developing and maintaining software applications, collaborating with cross-functional
+            teams, and ensuring code quality.</p>
         </div>
       </div>
       <div class="speaker">
-        <img src="./images/speaker2.jpg" class="speaker-img">
+        <div>
+          <img src="./images/speaker2.jpg" class="speaker-img">
+        </div>
         <div class="speaker-right">
           <p class="name">Jane Smith</p>
           <p class="title">Marketing Specialist</p>
           <hr class="underline">
-          <p>Manages marketing campaigns, conducts market research, and develops strategies to promote the company's products and services.</p>
+          <p>Manages marketing campaigns, conducts market research, and develops strategies to promote the company's
+            products and services.</p>
         </div>
       </div>
-      <div class="dynamic d-none">
-        <div class="speaker">
+      <div class="dynamic speaker hidden">
+        <div>
           <img src="./images/speaker3.jpg" class="speaker-img">
-          <div class="speaker-right">
-            <p class="name">Robert Johnson</p>
-            <p class="title">Financial Analyst</p>
-            <hr class="underline">
-            <p>Analyzes financial data, prepares reports, and provides insights to support strategic financial decision-making within the company.</p>
-          </div>
         </div>
-        <div class="speaker">
+        <div class="speaker-right">
+          <p class="name">Robert Johnson</p>
+          <p class="title">Financial Analyst</p>
+          <hr class="underline">
+          <p>Analyzes financial data, prepares reports, and provides insights to support strategic financial
+            decision-making within the company.</p>
+        </div>
+      </div>
+      <div class="dynamic speaker hidden">
+        <div>
           <img src="./images/speaker4.jpg" class="speaker-img">
-          <div class="speaker-right">
-            <p class="name">Amy Williams</p>
-            <p class="title">UX/UI Designer</p>
-            <hr class="underline">
-            <p>Creates user-centric designs for digital products, conducts user research, and collaborates with development teams to implement designs.</p>
-          </div>
         </div>
-        <div class="speaker">
+        <div class="speaker-right">
+          <p class="name">Amy Williams</p>
+          <p class="title">UX/UI Designer</p>
+          <hr class="underline">
+          <p>Creates user-centric designs for digital products, conducts user research, and collaborates with
+            development teams to implement designs.</p>
+        </div>
+      </div>
+      <div class="dynamic speaker hidden">
+        <div>
           <img src="./images/speaker5.jpg" class="speaker-img">
-          <div class="speaker-right">
-            <p class="name">Michael Brown</p>
-            <p class="title">Human Resources Manager</p>
-            <hr class="underline">
-            <p>Oversees HR functions, including recruitment, employee relations, performance management, and development of HR policies.</p>
-          </div>
         </div>
-        <div class="speaker">
+        <div class="speaker-right">
+          <p class="name">Michael Brown</p>
+          <p class="title">Human Resources Manager</p>
+          <hr class="underline">
+          <p>Oversees HR functions, including recruitment, employee relations, performance management, and development
+            of HR policies.</p>
+        </div>
+      </div>
+      <div class="dynamic speaker hidden">
+        <div>
           <img src="./images/speaker6.jpg" class="speaker-img">
-          <div class="speaker-right">
-            <p class="name">Emily Davis</p>
-            <p class="title">Customer Support Representative</p>
-            <hr class="underline">
-            <p>Assists customers with product inquiries, resolves issues, and provides excellent customer service through various communication channels.</p>
-          </div>
+        </div>
+        <div class="speaker-right">
+          <p class="name">Emily Davis</p>
+          <p class="title">Customer Support Representative</p>
+          <hr class="underline">
+          <p>Assists customers with product inquiries, resolves issues, and provides excellent customer service through
+            various communication channels.</p>
         </div>
       </div>
     </div>
     <div id="moreBtn" class="moreBtn">
       <button>More<i class='bx bx-down-arrow-alt'></i></button>
     </div>
-    <div id="lessBtn" class="lessBtn d-none">
+    <div id="lessBtn" class="lessBtn hidden">
       <button>Less<i class='bx bx-up-arrow-alt'></i></button>
     </div>
+  </section>
+  <section class="section-4-home">
+    <h5>Partner</h5>
+    <hr class="underline">
+    <div class="partner-container">
+      <p class="mozilla">mozilla</p>
+      <p class="google">Google</p>
+      <p class="naver">NAVER</p>
+      <p class="daumkakao">daumkakao</p>
+      <p class="airbnb">airbnb</p>
+      <p class="samsung">Samsung</p>
+    </div>
+  </section>
+  <section class="section-5-home">
+    <img src="./images/logotop.png" alt="logo">
+    <p>2024 Creative Commons Korea. <br>
+      Some Rights Reserved.
+    </p>
   </section>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

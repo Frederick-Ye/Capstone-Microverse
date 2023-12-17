@@ -10,15 +10,20 @@ document.getElementById('closeBtn').addEventListener('click', () => {
 
 const more = document.getElementById('moreBtn');
 const less = document.getElementById('lessBtn');
+const dynamicItems = document.querySelectorAll('.dynamic');
 
 more.addEventListener('click', () => {
-  document.querySelector('div.dynamic').classList.remove('d-none');
-  more.classList.add('d-none');
-  less.classList.remove('d-none');
+  dynamicItems.forEach(function(element) {
+    element.classList.remove('hidden')
+  });
+  more.classList.add('hidden');
+  less.classList.remove('hidden');
 });
 
 less.addEventListener('click', () => {
-  document.querySelector('div.dynamic').classList.add('d-none');
-  more.classList.remove('d-none');
-  less.classList.add('d-none');
+  dynamicItems.forEach(function(element) {
+    element.classList.add('hidden')
+  });
+  more.classList.remove('hidden');
+  less.classList.add('hidden');
 });

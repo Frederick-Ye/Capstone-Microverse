@@ -7,12 +7,24 @@
   font-family: 'Lato', sans-serif;
 }
 
+.navbar-logo {
+  display: none;
+}
+
+.campaign {
+  display: none;
+}
+
 .hero {
   padding: 3rem 1rem;
 }
 
+.hero h2 {
+  font-weight: 900;
+}
+
 .header-main {
-  color: #cecece;
+  color: #fff;
   background: url(./images/background.jpg);
   background-size: cover;
   background-position: right;
@@ -25,6 +37,7 @@
 
 .header-about h1 {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .header-about .hero p {
@@ -35,9 +48,7 @@
   color: black;
   border: 3px solid black;
   background-color: #fff;
-  padding-top: 8px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
 }
 
 .contact-info {
@@ -57,7 +68,8 @@
 }
 
 .navBar {
-  background-color: transparent;
+  background-color: #fff;
+  color: black;
 }
 
 .navbar-toggler {
@@ -80,7 +92,7 @@
 .featured-speakers h5 {
   text-align: center;
   padding-top: 1.5rem;
-  color: #cecece;
+  color: #fff;
 }
 
 .underline {
@@ -101,6 +113,7 @@
 }
 
 .program-list {
+  color: #fff;
   width: 99%;
   height: 5rem;
   display: flex;
@@ -124,7 +137,6 @@
 }
 
 .program-text {
-  padding-left: 10px;
   font-size: 0.8rem;
   width: 60%;
   padding-top: 15px;
@@ -190,15 +202,16 @@
 .speaker {
   display: flex;
   height: 8rem;
+  gap: 1rem;
 }
 
 .speaker-img {
-  max-width: 40%;
+  max-width: 127px;
   height: auto;
 }
 
 .speaker-right {
-  width: 70%;
+  width: 60%;
   height: 100%;
   padding-left: 1rem;
 }
@@ -230,12 +243,6 @@
   margin-bottom: 3px;
 }
 
-.dynamic {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
 /* about page mobile */
 
 .section-2 h5,
@@ -257,5 +264,261 @@
 }
 
 .logo-large {
-  border: 1px solid #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.3rem 2rem 1.3rem;
+}
+
+.logo-large img {
+  padding: 1rem;
+  border: 3px solid #cecece;
+  max-width: 90%;
+  height: 150px;
+
+}
+
+.section-3 {
+  background-color: rgb(255, 192, 192);
+}
+
+.section-3-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.section-3-img {
+  max-width: 90%;
+  margin-bottom: 1rem;
+}
+
+.section-4 {
+  background-color: grey;
+}
+
+.partner-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.section-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.section-5 p {
+  font-size: 10px;
+  padding-top: 1rem;
+}
+
+.section-5 img {
+  max-width: 30%;
+}
+
+.section-4-home {
+  display: none;
+}
+
+.section-5-home {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .navbar-logo {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-logo img {
+    max-width: 100px;
+    height: 40px;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .campaign {
+    display: inline;
+    color: royalblue;
+    border: 5px solid royalblue;
+    padding: 0 1rem;
+    margin: 0 1rem 0 1rem;
+  }
+
+  .hero {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .home-h1 {
+    font-size: 3rem;
+  }
+
+  .hero h2 {
+    margin-top: 2rem;
+  }
+
+  .hello-text {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  .hero-text-home {
+    background-color: transparent;
+    border: 3px solid #cecece;
+    padding: 1rem;
+  }
+
+  .place {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
+
+  .section-2 h5,
+  .section-3 h5,
+  .section-4 h5 {
+    font-size: 2rem;
+  }
+
+  .section-4-home h5 {
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .section-2 p,
+  .section-3 p,
+  .section-4 p {
+    font-size: 1rem;
+  }
+
+  .program-container {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .programBtn button:hover {
+    background-color: rgb(255, 129, 18);
+    color: #fff;
+  }
+
+  .program-text p {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  .logo-large {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .logo-large img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .section-3-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-3-img {
+    max-width: 30%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-4 {
+    display: none;
+  }
+
+  .section-5 img,
+  .section-5-home img {
+    max-width: 50%;
+    height: 80px;
+  }
+
+  .section-5 p,
+  .section-5-home p {
+    font-size: 1rem;
+  }
+
+  .section-5,
+  .section-5-home {
+    color: #fff;
+    background-color: rgb(56, 56, 56);
+    padding-top: 1rem;
+  }
+
+
+  .section-5-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .section-4-home {
+    display: block;
+  }
+
+  /* feature speakers */
+
+  .speaker-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 5rem;
+  }
+
+  .partner-container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .dynamic {
+    display: inline-flex;
+  }
+
+  .moreBtn {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .speaker-right p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .speaker-container {
+    gap: 2rem;
+  }
+
+  .speaker-right p {
+    font-size: 1rem;
+  }
 }
