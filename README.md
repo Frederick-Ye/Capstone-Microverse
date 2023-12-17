@@ -51,7 +51,7 @@
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
-## Live Demo <a name="live-demo">http://127.0.0.1:5500/index.html</a>
+## Live Demo <a name="live-demo">https://frederick-ye.github.io/Capstone-Microverse/</a>
 
 - You can see the live demo here.
 
