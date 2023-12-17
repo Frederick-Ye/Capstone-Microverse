@@ -35,38 +35,38 @@ const speakers = [
     Image: './images/speaker1.jpg',
     Name: 'John Doe',
     Job: 'Software Engineer',
-    detail: 'Responsible for developing and maintaining software applications, collaborating with cross-functional teams, and ensuring code quality.'
+    detail: 'Responsible for developing and maintaining software applications, collaborating with cross-functional teams, and ensuring code quality.',
   },
   {
     Image: './images/speaker2.jpg',
     Name: 'Jane Smith',
     Job: 'Marketing Specialist',
-    detail: 'Manages marketing campaigns, conducts market research, and develops strategies to promote the company products and services.'
+    detail: 'Manages marketing campaigns, conducts market research, and develops strategies to promote the company products and services.',
   },
   {
     Image: './images/speaker3.jpg',
     Name: 'Robert Johnson',
     Job: 'Financial Analyst',
-    detail: 'Analyzes financial data, prepares reports, and provides insights to support strategic financial decision-making within the company.'
+    detail: 'Analyzes financial data, prepares reports, and provides insights to support strategic financial decision-making within the company.',
   },
   {
     Image: './images/speaker4.jpg',
     Name: 'John Doe',
     Job: 'Software Engineer',
-    detail: 'Responsible for developing and maintaining software applications, collaborating with cross-functional teams, and ensuring code quality.'
+    detail: 'Responsible for developing and maintaining software applications, collaborating with cross-functional teams, and ensuring code quality.',
   },
   {
     Image: './images/speaker5.jpg',
     Name: 'Amy Williams',
     Job: 'UX/UI Designer',
-    detail: 'Creates user-centric designs for digital products, conducts user research, and collaborates with development teams to implement designs.'
+    detail: 'Creates user-centric designs for digital products, conducts user research, and collaborates with development teams to implement designs.',
   },
   {
     Image: './images/speaker6.jpg',
     Name: 'Michael Brown',
     Job: 'Human Resources Manager',
-    detail: 'Oversees HR functions, including recruitment, employee relations, performance management, and development of HR policies.'
-  }
+    detail: 'Oversees HR functions, including recruitment, employee relations, performance management, and development of HR policies.',
+  },
 ];
 
 function getdynamicHtml(speaker) {
@@ -80,8 +80,8 @@ function getdynamicHtml(speaker) {
     <hr class="underline">
     <p>${speaker.detail}</p>
   </div>
-</div>`
-  return html
+</div>`;
+  return html;
 }
 
 function showDynamic() {
