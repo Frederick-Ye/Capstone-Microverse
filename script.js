@@ -112,6 +112,8 @@ less.addEventListener('click', closeDynamic);
 function openDynamicIfNeeded() {
   if (window.innerWidth >= 768) {
     openDynamic();
+  } else if (window.innerWidth <= 375) {
+    closeDynamic();
   }
 }
 
