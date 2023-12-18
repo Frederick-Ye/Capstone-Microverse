@@ -511,11 +511,19 @@ h6 {
   .moreBtn {
     display: none;
   }
+
+  .lessBtn {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
   .speaker-right p {
     font-size: 0.8rem;
+  }
+  
+  .lessBtn {
+    display: none;
   }
 }
 
@@ -526,5 +534,9 @@ h6 {
 
   .speaker-right p {
     font-size: 1rem;
+  }
+
+  .lessBtn {
+    display: none;
   }
 }

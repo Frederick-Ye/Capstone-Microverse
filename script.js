@@ -93,19 +93,27 @@ function showDynamic() {
 
 function closeDynamic() {
   showDynamic();
-  less.classList.add('hidden');
   more.classList.remove('hidden');
+  less.classList.add('hidden');
 }
 
 showDynamic();
 
-window.addEventListener('resize', showDynamic);
-
-more.addEventListener('click', () => {
+function openDynamic() {
   const allSpeakersHtml = speakers.map(getdynamicHtml).join('');
   dynamic.innerHTML = allSpeakersHtml;
   less.classList.remove('hidden');
   more.classList.add('hidden');
-});
+}
 
+more.addEventListener('click', openDynamic);
 less.addEventListener('click', closeDynamic);
+
+function openDynamicIfNeeded() {
+  if (window.innerWidth >= 768) {
+    openDynamic();
+  }
+}
+
+window.addEventListener('resize', openDynamicIfNeeded);
+openDynamicIfNeeded();
