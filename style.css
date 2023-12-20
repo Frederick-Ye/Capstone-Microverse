@@ -19,7 +19,6 @@
   position: relative;
   height: 100vh;
   background: url('./images/background.jpg') center/cover;
-  /* Set your background image */
 }
 
 .overlay {
@@ -86,7 +85,7 @@
   margin-bottom: 2rem;
 }
 
-.about-heading hr{
+.about-heading hr {
   display: none;
 }
 
@@ -528,17 +527,17 @@
     display: block;
   }
 
+  .hello-text {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
   .hero-content .hello-text {
     margin-top: 0;
   }
 
   .hero h2 {
     margin-top: 2rem;
-  }
-
-  .hello-text {
-    font-size: 2rem;
-    margin-top: 5rem;
   }
 
   .hero-text-home {
@@ -814,7 +813,6 @@
 }
 
 @media (min-width: 1440px) {
-
   .hero-content {
     top: 20%;
   }
