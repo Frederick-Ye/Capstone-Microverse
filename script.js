@@ -71,7 +71,8 @@ const speakers = [
 
 function getdynamicHtml(speaker) {
   const html = `<div class="speaker">
-  <div>
+  <div class="image-container">
+    <img src="./images/background icon.png" class="speaker-bg">
     <img src="${speaker.Image}" class="speaker-img">
   </div> 
   <div class="speaker-right">

@@ -15,29 +15,86 @@
   display: none;
 }
 
-.hero {
-  padding: 3rem 1rem;
+.hero-main {
+  position: relative;
+  height: 100vh;
+  background: url('./images/background.jpg') center/cover;
+  /* Set your background image */
 }
 
-.hero h2 {
-  font-weight: 900;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(66, 0, 71, 0.6);
 }
 
-.header-main {
+.hero-content {
+  position: absolute;
+  text-align: start;
   color: #fff;
+  top: 22%;
+  left: 5%;
+  right: 5%;
+}
+
+.hero-content .hello-text {
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.hero-content h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.hero-content .hero-text-home {
+  background-color: rgba(66, 0, 71, 1);
+  border: 3px solid white;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h2 {
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.hero-about {
   background: url(./images/background.jpg);
   background-size: cover;
-  background-position: right;
-}
-
-.header-about {
+  background-position: center;
   color: #fff;
-  background-color: royalblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.header-about h1 {
+.about-hello {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-heading h1 {
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.about-heading hr{
+  display: none;
+}
+
+.contact-info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 .speaker-right p {
@@ -63,14 +120,10 @@
 }
 
 .hero-text {
-  color: black;
-  border: 3px solid black;
-  background-color: #fff;
+  background-color: rgb(106, 2, 113);
+  color: rgb(255, 255, 255);
+  border: 3px solid #cecece;
   padding: 1rem;
-}
-
-.contact-info {
-  margin-top: 3rem;
 }
 
 .hero h1 {
@@ -154,14 +207,19 @@
   width: 20%;
 }
 
-h6 {
+.program2 h6 {
   font-size: 0.75rem;
+  font-weight: 700;
 }
 
 .program-text {
   font-size: 0.8rem;
   width: 60%;
   padding-top: 15px;
+}
+
+.program-link {
+  display: none;
 }
 
 .moreBtn,
@@ -223,16 +281,36 @@ h6 {
 
 .speaker {
   display: flex;
-  height: 8rem;
+  height: 9rem;
   gap: 1rem;
 }
 
-.speaker-img {
-  max-width: 127px;
+.image-container {
+  position: relative;
+  width: 127px;
   height: auto;
 }
 
+.speaker-bg {
+  position: absolute;
+  width: 127px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.speaker-img {
+  position: absolute;
+  max-width: 120px;
+  height: auto;
+  z-index: 1;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
 .speaker-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 60%;
   height: 100%;
   padding-left: 1rem;
@@ -293,14 +371,67 @@ h6 {
 .section-3-img-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 2rem 1rem 2rem;
 }
 
-.section-3-img {
-  max-width: 90%;
+.img1,
+.img2 {
   margin-bottom: 1rem;
+}
+
+.img1 img,
+.img2 img {
+  max-width: 500px;
+}
+
+.overlay-text {
+  text-align: center;
+  color: #fff;
+}
+
+.overlay-text h1 {
+  font-weight: 900;
+}
+
+.section-3-img1 {
+  width: 100%;
+}
+
+.section-3-img2 {
+  width: 100%;
+}
+
+.img1 {
+  position: relative;
+}
+
+.about-overlay1 {
+  position: absolute;
+  background-color: rgba(182, 18, 174, 0.8);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.img2 {
+  position: relative;
+}
+
+.about-overlay2 {
+  position: absolute;
+  background-color: rgba(182, 18, 174, 0.8);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
 .section-4 {
@@ -340,6 +471,31 @@ h6 {
   display: none;
 }
 
+.section-5-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.license-logo {
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  font-weight: 900;
+  line-height: 0.7;
+}
+
+.license-text {
+  font-size: 0.6rem;
+  width: 50%;
+  line-height: 1;
+}
+
 @media (min-width: 768px) {
   .navbar-logo {
     display: block;
@@ -364,13 +520,16 @@ h6 {
     margin: 0 1rem 0 1rem;
   }
 
-  .hero {
-    padding-left: 15%;
-    padding-right: 15%;
+  .about-hello {
+    display: none;
   }
 
-  .home-h1 {
-    font-size: 3rem;
+  .about-heading hr {
+    display: block;
+  }
+
+  .hero-content .hello-text {
+    margin-top: 0;
   }
 
   .hero h2 {
@@ -383,13 +542,41 @@ h6 {
   }
 
   .hero-text-home {
-    background-color: transparent;
     border: 3px solid #cecece;
     padding: 1rem;
   }
 
   .place {
     font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
+
+  .hero-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .about-heading {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-heading h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-about .hero-text {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
     margin-bottom: 5rem;
   }
 
@@ -411,8 +598,19 @@ h6 {
   }
 
   .program-container {
-    padding-left: 20%;
-    padding-right: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .program-list {
+    height: 11.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .programBtn button:hover {
@@ -420,14 +618,54 @@ h6 {
     color: #fff;
   }
 
-  .program-text p {
-    font-size: 1rem;
-    padding-right: 1rem;
+  .program1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
-  h6 {
-    font-size: 1rem;
-    font-weight: 700;
+  .program2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+  }
+
+  .program2 h6 {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+
+  .program-text {
+    height: 50%;
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center;
+    padding: 0 0.3rem 0 0.3rem;
+  }
+
+  .program-text p {
+    margin-bottom: 0;
+  }
+
+  .program-link {
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .program-link a {
+    font-size: 0.9rem;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .programBtn {
+    display: none;
   }
 
   .logo-large {
@@ -446,12 +684,10 @@ h6 {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-  }
-
-  .section-3-img {
-    max-width: 30%;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
   .section-4 {
@@ -476,12 +712,30 @@ h6 {
     padding-top: 1rem;
   }
 
-  .section-5-home {
+  .section-5-home,
+  .section-5-about {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     gap: 1rem;
+  }
+
+  .license-logo {
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    font-weight: 900;
+    line-height: 0.7;
+  }
+
+  .license-text {
+    font-size: 1rem;
+    width: 50%;
+    line-height: 1;
   }
 
   .section-4-home {
@@ -518,6 +772,38 @@ h6 {
 }
 
 @media (min-width: 1024px) {
+  .hero-content {
+    top: 15%;
+    left: 18%;
+  }
+
+  .hero-content .hello-text {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .hero-content .home-h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+
+  .hero-content .hero-text-home {
+    margin-right: 45%;
+  }
+
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .program-list {
+    height: 12rem;
+  }
+
+  .program-text {
+    font-size: 0.8rem;
+    padding: 0 0.3rem 0 0.3rem;
+  }
+
   .speaker-right p {
     font-size: 0.8rem;
   }
@@ -528,6 +814,24 @@ h6 {
 }
 
 @media (min-width: 1440px) {
+
+  .hero-content {
+    top: 20%;
+  }
+
+  .program-list {
+    height: 14rem;
+  }
+
+  .program-text {
+    font-size: 1rem;
+    padding: 0 0.3rem 0 0.3rem;
+  }
+
+  .program2 h6 {
+    font-size: 1.25rem;
+  }
+
   .speaker-container {
     gap: 2rem;
   }
