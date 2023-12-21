@@ -7,6 +7,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+.menubar {
+  display: none;
+}
+
 .navbar-logo {
   display: none;
 }
@@ -35,7 +39,7 @@
   text-align: start;
   color: #fff;
   top: 22%;
-  left: 5%;
+  left: 12%;
   right: 5%;
 }
 
@@ -137,11 +141,6 @@
   font-size: 0.9rem;
 }
 
-.navBar {
-  background-color: #fff;
-  color: black;
-}
-
 .navbar-toggler {
   border: none;
   box-shadow: none;
@@ -209,6 +208,7 @@
 .program2 h6 {
   font-size: 0.75rem;
   font-weight: 700;
+  color: pink;
 }
 
 .program-text {
@@ -228,11 +228,12 @@
 }
 
 .featured-speakers {
-  background-color: #cecece;
+  color: #fff;
+  background-color: rgba(66, 0, 71, 0.9);
 }
 
 .featured-speakers h5 {
-  color: black;
+  color: #fff;
 }
 
 .programBtn button {
@@ -328,7 +329,7 @@
 
 .title {
   font-style: italic;
-  color: red;
+  color: pink;
 }
 
 .details {
@@ -349,6 +350,10 @@
   border-bottom: 1px solid #cecece;
 }
 
+.program2 i {
+  background-color: #fff;
+}
+
 .logo-large {
   display: flex;
   flex-direction: column;
@@ -364,7 +369,7 @@
 }
 
 .section-3 {
-  background-color: rgb(255, 192, 192);
+  background-color: #fff;
 }
 
 .section-3-img-container {
@@ -437,13 +442,39 @@
   background-color: grey;
 }
 
+.section-4 h5 {
+  color: #fff;
+}
+
+.section-4-home {
+  background-color: #cecece;
+}
+
 .partner-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  color: #cecece;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.partner-top,
+.partner-bot {
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding-bottom: 1rem;
+  gap: 2rem;
+}
+
+.daumkakao {
+  width: 55%;
+  text-align: end;
+}
+
+.airbnb {
+  width: 45%;
+  text-align: start;
 }
 
 .section-5 {
@@ -471,6 +502,8 @@
 }
 
 .section-5-about {
+  color: #cecece;
+  background-color: rgb(56, 56, 56);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,27 +529,32 @@
 }
 
 @media (min-width: 768px) {
+  .menubar {
+    display: block;
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+    width: 100%;
+    height: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 5% 0.5rem 0;
+  }
+
   .navbar-logo {
     display: block;
     text-align: center;
   }
 
   .navbar-logo img {
-    max-width: 100px;
-    height: 40px;
+    max-width: 300px;
+    height: 3.75rem;
   }
 
   .navbar-collapse {
-    display: flex;
     justify-content: space-between;
-  }
-
-  .campaign {
-    display: inline;
-    color: royalblue;
-    border: 5px solid royalblue;
-    padding: 0 1rem;
-    margin: 0 1rem 0 1rem;
   }
 
   .about-hello {
@@ -530,6 +568,10 @@
   .hello-text {
     font-size: 2rem;
     margin-top: 5rem;
+  }
+
+  .hero-content {
+    left: 5%;
   }
 
   .hero-content .hello-text {
@@ -586,8 +628,31 @@
   }
 
   .section-4-home h5 {
+    color: #fff;
     text-align: center;
     padding-top: 1.5rem;
+  }
+
+  .section-4-home,
+  .section-4,
+  .section-5-about,
+  .section-5-home {
+    height: 12rem;
+  }
+
+  .partner-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .partner-top {
+    margin-left: 3.2rem;
+  }
+
+  .section-2 h5,
+  .section-3 h5 {
+    margin-top: 2rem;
   }
 
   .section-2 p,
@@ -600,8 +665,8 @@
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .program-list {
@@ -685,12 +750,16 @@
     gap: 1rem;
     padding-top: 3rem;
     padding-bottom: 5rem;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   .section-4 {
     display: none;
+  }
+
+  .section-4-home {
+    background-color: gray;
   }
 
   .section-5 img,
@@ -713,12 +782,14 @@
 
   .section-5-home,
   .section-5-about {
+    color: #cecece;
+    background-color:rgb(56, 56, 56);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    gap: 1rem;
+    gap: 5rem;
   }
 
   .license-logo {
@@ -726,15 +797,14 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 50%;
+    width: 40%;
     font-weight: 900;
     line-height: 0.7;
   }
 
   .license-text {
     font-size: 1rem;
-    width: 50%;
-    line-height: 1;
+    width: 55%;
   }
 
   .section-4-home {
@@ -748,6 +818,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding-bottom: 5rem;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .partner-container {
@@ -773,7 +845,24 @@
 @media (min-width: 1024px) {
   .hero-content {
     top: 15%;
-    left: 18%;
+    left: 12%;
+  }
+
+  .campaign {
+    display: block;
+    color: royalblue;
+    border: 5px solid royalblue;
+    padding: 0 1rem;
+  }
+
+  .program-container {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .speaker-container {
+    padding-left: 12%;
+    padding-right: 12%;
   }
 
   .hero-content .hello-text {
