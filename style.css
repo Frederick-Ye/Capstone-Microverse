@@ -455,9 +455,7 @@
   color: #cecece;
   font-size: 1.5rem;
   font-weight: 700;
-  padding-top: 1rem;
   text-align: center;
-  padding-bottom: 3rem;
 }
 
 .partner-top,
@@ -476,6 +474,14 @@
 .airbnb {
   width: 45%;
   text-align: start;
+}
+
+.partner-bot {
+  padding-bottom: 3rem;
+}
+
+.section-4 .underline {
+  padding-top: 1rem;
 }
 
 .section-5 {
@@ -633,7 +639,7 @@
   .section-4,
   .section-5-about,
   .section-5-home {
-    height: 12rem;
+    height: 10rem;
   }
 
   .partner-container {
