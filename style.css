@@ -447,6 +447,7 @@
 }
 
 .section-4-home {
+  display: none;
   background-color: #cecece;
 }
 
@@ -758,6 +759,7 @@
   }
 
   .section-4-home {
+    display: block;
     background-color: gray;
   }
 
