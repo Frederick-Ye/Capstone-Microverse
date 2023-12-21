@@ -489,10 +489,6 @@
   max-width: 30%;
 }
 
-.section-4-home {
-  display: none;
-}
-
 .section-5-home {
   display: none;
 }
@@ -530,15 +526,14 @@
 
 @media (min-width: 768px) {
   .menubar {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: rgb(49, 49, 49);
     color: #fff;
     width: 100%;
     height: 20px;
     font-size: 0.8rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     gap: 1rem;
     padding: 0.5rem 5% 0.5rem 0;
   }
@@ -644,6 +639,10 @@
     display: flex;
     gap: 2rem;
     justify-content: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 2rem;
+    font-weight: 500;
   }
 
   .partner-top {
@@ -783,7 +782,7 @@
   .section-5-home,
   .section-5-about {
     color: #cecece;
-    background-color:rgb(56, 56, 56);
+    background-color: rgb(56, 56, 56);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -807,10 +806,6 @@
     width: 55%;
   }
 
-  .section-4-home {
-    display: block;
-  }
-
   /* feature speakers */
 
   .speaker-container {
@@ -820,13 +815,6 @@
     padding-bottom: 5rem;
     padding-left: 5%;
     padding-right: 5%;
-  }
-
-  .partner-container {
-    padding-left: 10rem;
-    padding-right: 10rem;
-    font-size: 2rem;
-    font-weight: 500;
   }
 
   .dynamic {
