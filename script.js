@@ -5,17 +5,17 @@ const openNavbar = document.querySelector('#open-btn');
 const closeNavbar = document.querySelector('.close-btn');
 const mobileNav = document.querySelector('.nav-bar-mobile');
 
-openNavbar.addEventListener('click', ()=> {
+openNavbar.addEventListener('click', () => {
   openNavbar.classList.add('d-none');
   mobileNav.classList.remove('d-none');
   document.body.style.overflow = 'hidden';
-})
+});
 
-closeNavbar.addEventListener('click', ()=> {
+closeNavbar.addEventListener('click', () => {
   openNavbar.classList.remove('d-none');
   mobileNav.classList.add('d-none');
   document.body.style.overflow = 'auto';
-})
+});
 const speakers = [
   {
     Image: './images/speaker1.jpg',
