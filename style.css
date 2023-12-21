@@ -7,6 +7,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .menubar {
   display: none;
 }
@@ -19,14 +23,62 @@
   display: none;
 }
 
+.nav-bar-desktop {
+  display: none;
+}
+
 .first-link {
   color: orangered;
+}
+
+.nav-bar-mobile {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 69, 0, 0.9);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-bar-mobile-container {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-left: 6rem;
+  padding-top: 4rem;
+}
+
+.about-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-bar-mobile-container li {
+  margin-bottom: 1.25rem;
+}
+
+.open-btn-index,
+.close-btn {
+  padding-left: 1rem;
+  padding-top: 0.8rem;
 }
 
 .hero-main {
   position: relative;
   height: 100vh;
   background: url('./images/white-bg.jpg') center/cover;
+}
+
+.open-btn-index {
+  position: absolute;
+  color: orangered;
+}
+
+.open-btn-about {
+  align-self: flex-start;
+  padding-top: 0.8rem;
+  color: orangered;
 }
 
 .overlay {
@@ -81,7 +133,7 @@
   background: url(./images/4907157.jpg);
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: orangered;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -551,6 +603,31 @@
 }
 
 @media (min-width: 768px) {
+  .nav-bar-desktop {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .nav-bar-desktop-container {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    margin-bottom: 0;
+    gap: 4rem;
+  }
+
+  .about-link-desktop {
+    text-decoration: none;
+    color: orangered;
+  }
+
+  .open-btn-about,
+  .open-btn-index {
+    display: none;
+  }
+
   .menubar {
     display: flex;
     justify-content: flex-end;
