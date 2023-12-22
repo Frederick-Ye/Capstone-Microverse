@@ -700,6 +700,7 @@ body {
   .hero-text-home {
     border: 3px solid #cecece;
     padding: 1rem;
+    margin-right: 30%;
   }
 
   .place {
