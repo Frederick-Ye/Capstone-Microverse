@@ -725,7 +725,7 @@ body {
 
   .about-heading h1 {
     color: orangered;
-    font-size: 3.5rem;
+    font-size: 2.77rem;
   }
 
   .hero-about .hero-text {
@@ -977,6 +977,10 @@ body {
   .speaker-container {
     padding-left: 12%;
     padding-right: 12%;
+  }
+
+  .about-heading h1 {
+    font-size: 3.6rem;
   }
 
   .hero-content .hello-text {
