@@ -130,6 +130,13 @@ body {
   padding-right: 5%;
 }
 
+.hero-text {
+  background-color: #fff;
+  color: gray;
+  border: 3px solid #cecece;
+  padding: 1rem;
+}
+
 .hero-about .hero-text {
   text-align: center;
 }
@@ -183,13 +190,6 @@ body {
 
 .header-about .hero p {
   text-align: center;
-}
-
-.hero-text {
-  background-color: #fff;
-  color: gray;
-  border: 3px solid #cecece;
-  padding: 1rem;
 }
 
 .hero h1 {
@@ -685,10 +685,6 @@ body {
   .hello-text {
     font-size: 2rem;
     margin-top: 5rem;
-  }
-
-  .hero-content {
-    left: 5%;
   }
 
   .hero-content .hello-text {
