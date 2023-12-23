@@ -97,7 +97,7 @@ less.addEventListener('click', closeDynamic);
 function openDynamicDesktop() {
   if (window.innerWidth >= 768) {
     openDynamic();
-  } else if (window.innerWidth <= 375) {
+  } else if (window.innerWidth < 768) {
     closeDynamic();
   }
 }
