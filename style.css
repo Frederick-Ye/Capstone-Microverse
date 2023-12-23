@@ -437,9 +437,9 @@ body {
 }
 
 .logo-large img {
-  padding: 1rem 8rem 1rem 8rem;
+  padding: 1rem;
   border: 3px solid #cecece;
-  max-width: 90%;
+  max-width: 100%;
   height: 150px;
 }
 
