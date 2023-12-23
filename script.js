@@ -94,7 +94,7 @@ function openDynamic() {
 more.addEventListener('click', openDynamic);
 less.addEventListener('click', closeDynamic);
 
-function openDynamicIfNeeded() {
+function openDynamicDesktop() {
   if (window.innerWidth >= 768) {
     openDynamic();
   } else if (window.innerWidth <= 375) {
@@ -102,5 +102,5 @@ function openDynamicIfNeeded() {
   }
 }
 
-window.addEventListener('resize', openDynamicIfNeeded);
-openDynamicIfNeeded();
+window.addEventListener('resize', openDynamicDesktop);
+openDynamicDesktop();
