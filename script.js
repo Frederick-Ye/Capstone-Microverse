@@ -103,4 +103,3 @@ function openDynamicDesktop() {
 }
 
 window.addEventListener('resize', openDynamicDesktop);
-openDynamicDesktop();
