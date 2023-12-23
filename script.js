@@ -1,77 +1,64 @@
-document.querySelector('.navbar-toggler').addEventListener('click', () => {
-  document.querySelector('.navbar-toggler').classList.add('d-none');
-  document.getElementById('closeBtn').classList.remove('d-none');
-});
-
-document.getElementById('closeBtn').addEventListener('click', () => {
-  document.querySelector('.navbar-toggler').classList.remove('d-none');
-  document.getElementById('closeBtn').classList.add('d-none');
-});
-
-// const more = document.getElementById('moreBtn');
-// const less = document.getElementById('lessBtn');
-// const dynamicItems = document.querySelectorAll('.dynamic');
-
-// more.addEventListener('click', () => {
-//   dynamicItems.forEach(function(element) {
-//     element.classList.remove('hidden')
-//   });
-//   more.classList.add('hidden');
-//   less.classList.remove('hidden');
-// });
-
-// less.addEventListener('click', () => {
-//   dynamicItems.forEach(function(element) {
-//     element.classList.add('hidden')
-//   });
-//   more.classList.remove('hidden');
-//   less.classList.add('hidden');
-// });
 const dynamic = document.querySelector('.speaker-container');
 const more = document.getElementById('moreBtn');
 const less = document.getElementById('lessBtn');
+const openNavbar = document.querySelector('#open-btn');
+const closeNavbar = document.querySelector('.close-btn');
+const mobileNav = document.querySelector('.nav-bar-mobile');
+
+openNavbar.addEventListener('click', () => {
+  openNavbar.classList.add('d-none');
+  mobileNav.classList.remove('d-none');
+  document.body.style.overflow = 'hidden';
+});
+
+closeNavbar.addEventListener('click', () => {
+  openNavbar.classList.remove('d-none');
+  mobileNav.classList.add('d-none');
+  document.body.style.overflow = 'auto';
+});
 const speakers = [
   {
     Image: './images/speaker1.jpg',
-    Name: 'John Doe',
-    Job: 'Software Engineer',
-    detail: 'Responsible for developing and maintaining software applications, collaborating with cross-functional teams, and ensuring code quality.'
+    Name: 'Alice Johnson',
+    Job: 'Senior Software Engineer',
+    detail: 'Alice is responsible for designing and implementing complex software solutions. She collaborates with cross-functional teams.',
   },
   {
     Image: './images/speaker2.jpg',
-    Name: 'Jane Smith',
-    Job: 'Marketing Specialist',
-    detail: 'Manages marketing campaigns, conducts market research, and develops strategies to promote the company products and services.'
+    Name: 'David Rodriguez',
+    Job: 'Marketing Manager',
+    detail: 'David oversees the company marketing strategies, including digital campaigns, events, and brand promotion.',
   },
   {
     Image: './images/speaker3.jpg',
-    Name: 'Robert Johnson',
+    Name: 'Emily Chen',
     Job: 'Financial Analyst',
-    detail: 'Analyzes financial data, prepares reports, and provides insights to support strategic financial decision-making within the company.'
-  },
-  {
-    Image: './images/speaker4.jpg',
-    Name: 'John Doe',
-    Job: 'Software Engineer',
-    detail: 'Responsible for developing and maintaining software applications, collaborating with cross-functional teams, and ensuring code quality.'
+    detail: 'Emily is responsible for analyzing financial data, preparing reports, and providing insights to support strategic decision-making.',
   },
   {
     Image: './images/speaker5.jpg',
-    Name: 'Amy Williams',
+    Name: 'Michael Turner',
+    Job: 'Human Resources Specialist',
+    detail: 'Michael manages HR processes, including recruitment, onboarding, and employee relations.',
+  },
+  {
+    Image: './images/speaker4.jpg',
+    Name: 'Sophia Patel',
     Job: 'UX/UI Designer',
-    detail: 'Creates user-centric designs for digital products, conducts user research, and collaborates with development teams to implement designs.'
+    detail: 'Sophia specializes in creating intuitive and visually appealing user interfaces. She collaborates with product teams.',
   },
   {
     Image: './images/speaker6.jpg',
     Name: 'Michael Brown',
     Job: 'Human Resources Manager',
-    detail: 'Oversees HR functions, including recruitment, employee relations, performance management, and development of HR policies.'
-  }
+    detail: 'Oversees HR functions, including recruitment, employee relations, performance management, and development of HR policies.',
+  },
 ];
 
 function getdynamicHtml(speaker) {
   const html = `<div class="speaker">
-  <div>
+  <div class="image-container">
+    <img src="./images/background icon.png" class="speaker-bg">
     <img src="${speaker.Image}" class="speaker-img">
   </div> 
   <div class="speaker-right">
@@ -80,8 +67,8 @@ function getdynamicHtml(speaker) {
     <hr class="underline">
     <p>${speaker.detail}</p>
   </div>
-</div>`
-  return html
+</div>`;
+  return html;
 }
 
 function showDynamic() {
@@ -93,19 +80,29 @@ function showDynamic() {
 
 function closeDynamic() {
   showDynamic();
-  less.classList.add('hidden');
   more.classList.remove('hidden');
+  less.classList.add('hidden');
 }
 
 showDynamic();
 
-window.addEventListener('resize', showDynamic);
-
-more.addEventListener('click', () => {
+function openDynamic() {
   const allSpeakersHtml = speakers.map(getdynamicHtml).join('');
   dynamic.innerHTML = allSpeakersHtml;
   less.classList.remove('hidden');
   more.classList.add('hidden');
-});
+}
 
+more.addEventListener('click', openDynamic);
 less.addEventListener('click', closeDynamic);
+
+function openDynamicIfNeeded() {
+  if (window.innerWidth >= 768) {
+    openDynamic();
+  } else if (window.innerWidth <= 375) {
+    closeDynamic();
+  }
+}
+
+window.addEventListener('resize', openDynamicIfNeeded);
+openDynamicIfNeeded();

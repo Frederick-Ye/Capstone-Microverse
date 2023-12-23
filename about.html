@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,61 +10,63 @@
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
   <header class="header-about">
-    <nav class="navBar navbar-expand-md py-2 px-2">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "><i class='bx bx-menu bx-sm'></i></span>
-        </button>
-        <button class="navbar-toggler d-none" type="button" id="closeBtn" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Close">
-          <span class="navbar-toggler-icon"><i class='bx bx-x bx-sm'></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-logo">
-            <a href="index.html">
-              <img src="./images/logotop.png" alt="">
-            </a>
-          </div>
-          <ul class="navbar-nav">
-            <li class="nav-item ms-5">
-              <a id="homeBtn" class="nav-link text-success" href="index.html">Home</a>
-            </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">Program</a>
-            </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">Join</a>
-            </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">Sponsor</a>
-            </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">News</a>
-            </li>
-          </ul>
-          <div class="campaign">CC Campaign</div>
-        </div>
-      </div>
+    <div class="menubar">
+      <div><i class='bx bxl-facebook'></i></div>
+      <div><i class='bx bxl-twitter'></i></div>
+      <div>English</div>
+      <div>My page</div>
+      <div>Logout</div>
+    </div>
+    <nav class="nav-bar-mobile d-none">
+      <div class="close-btn"><i class='bx bx-x bx-md'></i></div>
+      <ul class="nav-bar-mobile-container">
+        <li><a class="about-link" href="index.html">Home</a></li>
+        <li>Program</li>
+        <li>Join</li>
+        <li>Sponsor</li>
+        <li>News</li>
+      </ul>
     </nav>
-    <section class="hero">
-      <h1>CREATIVE COMMONS <br>
-         GLOBAL SUMMIT<br>2024<br></h1>
-      <div class="hero-text">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia eaque molestiae accusantium autem dolor similique aperiam dignissimos totam est quos ipsa possimus, dicta ab? Alias vel cum eveniet sint.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis sunt iure voluptas quibusdam fuga! Explicabo laborum tempora ipsam doloribus sunt ut repudiandae nemo obcaecati, nostrum nobis iusto quae saepe sint.
-        </p>
+    <nav class="nav-bar-desktop">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <img src="./images/logotop.png" alt="">
+        </a>
       </div>
-      <p class="contact-info">
+      <ul class="nav-bar-desktop-container">
+        <li><a class="about-link-desktop" href="index.html">Home</a></li>
+        <li>Program</li>
+        <li>Join</li>
+        <li>Sponsor</li>
+        <li>News</li>
+        <li class="campaign">CC Campaign</li>
+      </ul>
+    </nav>
+    <section class="hero-about">
+      <div class="open-btn-about" id="open-btn"><i class='bx bx-menu bx-md'></i></div>
+      <div class="about-hello">
+        "Hello! Sharing world"
+      </div>
+      <div class="about-heading">
+        <h1>CREATIVE COMMONS <br>
+          GLOBAL SUMMIT 2024</h1>
+        <hr class="underline">
+      </div>
+      <div class="hero-text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia eaque molestiae accusantium autem dolor
+        similique aperiam dignissimos totam est quos ipsa possimus, dicta ab? Alias vel cum eveniet sint.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis sunt iure voluptas quibusdam fuga! Explicabo.
+      </div>
+      <div class="contact-info">
         Please contact us per Email for any further questions about CC Global Summit 2024! <br>
         <u>ccsummit2024@gmail.org.com</u>
-      </p>
+      </div>
   </header>
   <section class="section-2">
-    <h5>Creative Commons <br>
-      Global Summit 2024 Logo</h5>
+    <h5>Creative Commons Global Summit 2024 Logo</h5>
     <hr class="underline">
     <p>The logo of CC Global Summit 2024 was decided <br>through the logo competition from 8.June to 7.July.</p>
     <div class="logo-large">
@@ -77,32 +80,54 @@
       in Buenos Aires and in Warsaw.
     </p>
     <div class="section-3-img-container">
-      <img class="section-3-img" src="./images/meeting1.jpg" alt="meeting">
-    <img class="section-3-img" src="./images/meeting2.jpg" alt="meeting">
+      <div class="img1">
+        <img class="section-3-img1" src="./images/meeting1.jpg" alt="meeting">
+        <div class="about-overlay1">
+          <div class="overlay-text">
+            <h1>2013</h1>
+            CC Global Summit 2013 in Buenos Aires
+          </div>
+        </div>
+      </div>
+      <div class="img2">
+        <img class="section-3-img2" src="./images/meeting2.jpg" alt="meeting">
+        <div class="about-overlay2">
+          <div class="overlay-text">
+            <h1>2011</h1>
+            CC Global Summit 2011 in Warsaw
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="section-4">
     <h5>Partner</h5>
     <hr class="underline">
     <div class="partner-container">
-      <p class="mozilla">mozilla</p>
-      <p class="google">Google</p>
-      <p class="naver">NAVER</p>
-      <p class="daumkakao">daumkakao</p>
-      <p class="airbnb">airbnb</p>
-      <p class="samsung">Samsung</p>
+      <div class="partner-top">
+        <div class="mozilla">mozilla</div>
+        <div class="google">Google</div>
+        <div class="naver">NAVER</div>
+      </div>
+      <div class="partner-bot">
+        <div class="daumkakao">daumkakao</div>
+        <div class="airbnb">airbnb</div>
+      </div>
     </div>
   </section>
-  <section class="section-5">
-    <img src="./images/logotop.png" alt="logo">
-    <p>2024 Creative Commons Korea. <br>
-      Some Rights Reserved.
-    </p>
+  <section class="section-5-about">
+    <div class="license-logo"><i class='bx bx-fast-forward-circle bx-md'></i>creative <br>commons korea</div>
+    <div class="license-text">
+      2024 Creative Commons Korea. Some Rights Reserved. <br>
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis, <br>quaerat dolores odio totam nam
+      aperiam rem.
+    </div>
   </section>
-
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </body>
+
 </html>

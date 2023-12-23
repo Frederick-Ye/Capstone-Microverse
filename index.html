@@ -13,55 +13,51 @@
 
 <body>
   <header class="header-main">
-    <nav class="navBar navbar-expand-md py-2 px-2">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "><i class='bx bx-menu bx-sm'></i></span>
-        </button>
-        <button class="navbar-toggler d-none" type="button" id="closeBtn" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Close">
-          <span class="navbar-toggler-icon"><i class='bx bx-x bx-sm'></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-logo">
-            <a href="index.html">
-              <img src="./images/logotop.png" alt="">
-            </a>
-          </div>
-          <ul class="navbar-nav">
-            <li class="nav-item ms-5">
-              <a id="aboutBtn" class="nav-link text-success" href="about.html">About</a>
-            </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">Program</a>
-            </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">Join</a>
-            </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">Sponsor</a>
-            </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">News</a>
-            </li>
-          </ul>
-          <div class="campaign">CC Campaign</div>
-        </div>
-      </div>
+    <div class="menubar">
+      <div><i class='bx bxl-facebook'></i></div>
+      <div><i class='bx bxl-twitter'></i></div>
+      <div>English</div>
+      <div>My page</div>
+      <div>Logout</div>
+    </div>
+    <nav class="nav-bar-mobile d-none">
+      <div class="close-btn"><i class='bx bx-x bx-md'></i></div>
+      <ul class="nav-bar-mobile-container">
+        <li><a class="about-link" href="about.html">About</a></li>
+        <li>Program</li>
+        <li>Join</li>
+        <li>Sponsor</li>
+        <li>News</li>
+      </ul>
     </nav>
-    <section class="hero">
-      <p class="hello-text">"Hello! Sharing world"</p>
-      <h1 class="home-h1">CREATIVE COMMONS <br>GLOBAL SUMMIT<br>2024<br></h1>
-      <p class="hero-text-home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur et ea?
-        Tenetur corrupti voluptatum aliquid error modi reprehenderit beatae nobis ipsa, porro eos dolorum. Labore
-        accusamus facere odio. Magni?
-      </p>
+    <nav class="nav-bar-desktop">
+      <div class="navbar-logo">
+        <img src="./images/logotop.png" alt="">
+      </div>
+      <ul class="nav-bar-desktop-container">
+        <li><a class="about-link-desktop" href="about.html">About</a></li>
+        <li>Program</li>
+        <li>Join</li>
+        <li>Sponsor</li>
+        <li>News</li>
+        <li class="campaign">CC Campaign</li>
+      </ul>
+    </nav>
+    <section class="hero-main">
+      <div class="open-btn-index" id="open-btn"><i class='bx bx-menu bx-md'></i></div>
+      <div class="hero-content">
+        <p class="hello-text">"Hello! Sharing world"</p>
+        <h1 class="home-h1">CREATIVE COMMONS <br>GLOBAL SUMMIT<br>2024<br></h1>
+        <p class="hero-text-home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur et ea?
+          Tenetur corrupti voluptatum
+        </p>
 
-      <h2>2024.1.1(SAT) ~ 2(SUN)</h2>
-      <p class="place">@ National Museum of Myanmar, Yangon</p>
+        <h2>2024.1.1(SAT) ~ 2(SUN)</h2>
+        <p class="place">@ National Museum of Myanmar, Yangon</p>
+      </div>
     </section>
   </header>
+
 
   <section class="main-program">
     <h5>Main Program</h5>
@@ -69,7 +65,7 @@
     <div>
       <ul class="program-container">
         <li class="program-list">
-          <div class="program1"><a href=""><i class='bx bx-male-female bx-sm'></i></a></div>
+          <div class="program1"><i class='bx bx-male-female bx-sm'></i></div>
           <div class="program2">
             <h6>Lecture</h6>
           </div>
@@ -80,7 +76,7 @@
           </div>
         </li>
         <li class="program-list">
-          <div class="program1"><a href=""><i class='bx bxl-drupal bx-sm'></i></a></div>
+          <div class="program1"><i class='bx bxl-drupal bx-sm'></i></div>
           <div class="program2">
             <h6>CC Exhibition</h6>
           </div>
@@ -90,7 +86,7 @@
           </div>
         </li>
         <li class="program-list">
-          <div class="program1"><a href=""><i class='bx bx-support bx-sm'></i></a></div>
+          <div class="program1"><i class='bx bx-support bx-sm'></i></div>
           <div class="program2">
             <h6>Forum</h6>
           </div>
@@ -100,7 +96,7 @@
           </div>
         </li>
         <li class="program-list">
-          <div class="program1"><a href=""><i class='bx bxs-castle bx-sm'></i></a></div>
+          <div class="program1"><i class='bx bxs-castle bx-sm'></i></div>
           <div class="program2">
             <h6>Workshop</h6>
           </div>
@@ -110,7 +106,7 @@
           </div>
         </li>
         <li class="program-list">
-          <div class="program1"><a href=""><i class='bx bxl-deezer bx-sm'></i></a></div>
+          <div class="program1"><i class='bx bxl-deezer bx-sm'></i></div>
           <div class="program2">
             <h6>CC Ignite</h6>
           </div>
@@ -120,6 +116,9 @@
           </div>
         </li>
       </ul>
+      <div class="program-link">
+        <u><a href="#">SEE THE WHOLE PROGRAM</a></u>
+      </div>
       <div class="programBtn">
         <button>Join CC Global Summit 2024</button>
       </div>
@@ -142,19 +141,26 @@
     <h5>Partner</h5>
     <hr class="underline">
     <div class="partner-container">
-      <p class="mozilla">mozilla</p>
-      <p class="google">Google</p>
-      <p class="naver">NAVER</p>
-      <p class="daumkakao">daumkakao</p>
-      <p class="airbnb">airbnb</p>
-      <p class="samsung">Samsung</p>
+      <div class="partner-top">
+        <div class="mozilla">mozilla</div>
+        <div class="google">Google</div>
+        <div class="naver">NAVER</div>
+      </div>
+      <div class="partner-bot">
+        <div class="daumkakao">daumkakao</div>
+        <div class="airbnb">airbnb</div>
+      </div>
+    </div>
     </div>
   </section>
   <section class="section-5-home">
-    <img src="./images/logotop.png" alt="logo">
-    <p>2024 Creative Commons Korea. <br>
-      Some Rights Reserved.
-    </p>
+    <div class="license-logo"><i class='bx bx-fast-forward-circle bx-lg'></i>creative <br>commons korea</div>
+    <div class="license-text">
+      2024 Creative Commons Korea. Some Rights Reserved. <br>
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis, <br>quaerat dolores odio totam nam
+      aperiam rem.
+    </div>
   </section>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
