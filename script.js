@@ -8,20 +8,18 @@ const mobileNav = document.querySelector('.nav-bar-mobile');
 openNavbar.addEventListener('click', () => {
   openNavbar.classList.add('d-none');
   mobileNav.classList.remove('d-none');
-  document.body.style.overflow = 'hidden';
 });
 
 closeNavbar.addEventListener('click', () => {
   openNavbar.classList.remove('d-none');
   mobileNav.classList.add('d-none');
-  document.body.style.overflow = 'auto';
 });
 const speakers = [
   {
     Image: './images/speaker1.jpg',
     Name: 'Alice Johnson',
     Job: 'Senior Software Engineer',
-    detail: 'Alice is responsible for designing and implementing complex software solutions. She collaborates with cross-functional teams.',
+    detail: 'Alice is responsible for designing software solutions. She collaborates with cross-functional teams.',
   },
   {
     Image: './images/speaker2.jpg',
@@ -33,7 +31,7 @@ const speakers = [
     Image: './images/speaker3.jpg',
     Name: 'Emily Chen',
     Job: 'Financial Analyst',
-    detail: 'Emily is responsible for analyzing financial data, preparing reports, and providing insights to support strategic decision-making.',
+    detail: 'Emily is responsible for analyzing financial data, preparing reports, strategic decision-making.',
   },
   {
     Image: './images/speaker5.jpg',
@@ -45,13 +43,13 @@ const speakers = [
     Image: './images/speaker4.jpg',
     Name: 'Sophia Patel',
     Job: 'UX/UI Designer',
-    detail: 'Sophia specializes in creating intuitive and visually appealing user interfaces. She collaborates with product teams.',
+    detail: 'Sophia specializes in creating intuitive user interfaces. She collaborates with product teams.',
   },
   {
     Image: './images/speaker6.jpg',
     Name: 'Michael Brown',
     Job: 'Human Resources Manager',
-    detail: 'Oversees HR functions, including recruitment, employee relations, performance management, and development of HR policies.',
+    detail: 'Oversees HR functions, including recruitment, and development of HR policies.',
   },
 ];
 
